@@ -1,9 +1,11 @@
 <?php
-require_once "./actions/config.php";
+
+/* require_once "./actions/config.php";
 $sql = "SELECT * FROM usuários";
 
 $stmt = $conn->query($sql);
 $usuários = $stmt->fetchALL(PDO::FETCH_ASSOC);
+*/
 
 ?>
 

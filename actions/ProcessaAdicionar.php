@@ -1,4 +1,5 @@
 <?php
+/*
 require_once "./config/conexao.php";
 
 $nome = $_POST["nome"];
@@ -20,5 +21,5 @@ if($stmt->rowCount() > 0){
 } else{
     echo "Erro ao tentar adicionar usuário";
 }
-
+*/
 
