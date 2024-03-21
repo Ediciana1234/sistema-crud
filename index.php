@@ -1,20 +1,29 @@
 <?php
+require_once "./actions/config.php";
+$sql = "SELECT * FROM usuários";
+
+$stmt = $conn->query($sql);
+$usuários = $stmt->fetchALL(PDO::FETCH_ASSOC);
 
 ?>
 
 
-   
+<?php include "./Layout/Header.php"; ?>
 
 <div class="container">
-    <div cless="d-flex justify-content-between mt-5">
+
+    <div class="d-flex justify-content-between mt-5">
         <div>
-            <h4>Oi amados de Deus!</h4>
+            <h4>Usuários</h4>
         </div>
+
         <div>
-            <a href="Adicionar.php class= btn btn-primary">Adicionar</a>
+            <a href="Adicionar.php" class= "btn btn-primary">Adicionar</a>
         </div>
+
     </div>
-    <div cless= mt-5>
+
+    <div class= "mt-5">
         <table class= "table table-striped table-houve">
             <thead>
                 <tr>
@@ -42,5 +51,5 @@
 
 </div>
 
-
+<?php include "./Layout/Footer.php"; ?>
 

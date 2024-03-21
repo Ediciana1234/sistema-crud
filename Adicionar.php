@@ -4,35 +4,43 @@
 
 <?php include "./Layout/Header.php"; ?>
  
-  <div class="conteiner">
-    <div class= mt-3 d-flex justify-constant-between>
+<div class="container">
+    <div class= "mt-3 d-flex justify-content-between">
+
         <div>
             <h4>Adicionar Usuário</h4>
         </div>
+
         <div>
-            <a href= "index.php class=" btn btn-secondary">Voutar</a>
+            <a href= "index.php" class=" btn btn-secondary">Voltar</a>
         </div>
 
     </div>
-  <form class="row g-3">
-  <div class="col-md-6">
-    <label for="inputEmail4" class="form-label">Email</label>
-    <input type="email" class="form-control" id="inputEmail4">
-  </div>
-  <div class="col-md-6">
-    <label for="inputPassword4" class="form-label">Password</label>
-    <input type="password" class="form-control" id="inputPassword4">
-  </div>
-  <div class="col-12">
-    <label for="inputAddress" class="form-label">Address</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-  </div>
-  <div class="col-12">
-    <button type="submit" class="btn btn-primary">Salvar</button>
-  </div>
-</form>
 
-  </div>
+  <form class="row g-3" method="post" actions="./ProcessaAdicionar.php">
+
+    <div class="col-12">
+    <label for="nome" class="form-label">Nome</label>
+    <input type="text" name="nome" class="form-control" id="nome">
+    </div>
+
+    <div class="col-12">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" name="email" class="form-control" id="email">
+    </div>
+
+    <div class="col-12">
+    <label for="senha" class="form-label">Password</label>
+    <input type="password" name="senha" class="form-control" id="senha">
+    </div>
+
+    <div class="col-12">
+    <button type="submit" class="btn btn-primary">Salvar</button>
+   </div>
+
+  </form>
+
+</div>
 
 <?php include "./Layout/Footer.php"; ?>
  
